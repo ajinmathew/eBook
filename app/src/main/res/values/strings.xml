@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">eBook</string>
+
+    <string-array name="district">
+        <item>Select District</item>
+        <item>Kannur</item>
+        <item>Kollam</item>
+        <item>Ernakulam</item>
+        <item>Alappuzha</item>
+        <item>Kasaragode</item>
+        <item>Malappuram</item>
+        <item>Idukki</item>
+        <item>Kottayam</item>
+        <item>Kozhikode</item>
+        <item>Palakkad</item>
+        <item>Pathanamthitta</item>
+        <item>Thiruvanthapuram</item>
+        <item>Wayanad</item>
+        <item>Thrissur</item>
+    </string-array>
+    <string name="title_activity_admin_home">AdminHome</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_student_home">StudentHome</string>
+    <string name="title_activity_final">Final</string>
+
+</resources>
