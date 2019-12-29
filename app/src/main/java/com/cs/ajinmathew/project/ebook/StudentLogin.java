@@ -64,6 +64,7 @@ DatabaseReference reference;
                                 if(password.equals( Password )){
                                     Toast.makeText( getApplicationContext(),"Login Successful",Toast.LENGTH_LONG ).show();
                                     //startActivity( new Intent( getApplicationContext(),StudentHome.class ) );
+                                    startActivity( new Intent( getApplicationContext(),HomeStd.class ) );
                                 }else {
                                     Toast.makeText( getApplicationContext(),"Login Error ",Toast.LENGTH_LONG ).show();
                                 }
