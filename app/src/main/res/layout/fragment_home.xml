@@ -98,6 +98,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/prizeAddAdmin"/>
     </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/progress"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:id="@+id/uploadimage"
+        android:textColor="#DD1203"
+        style="@style/Widget.AppCompat.Button.Borderless" />
 
     <Button
         android:layout_width="wrap_content"

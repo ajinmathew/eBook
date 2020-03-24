@@ -16,11 +16,15 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:text="email id"/>
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:id="@+id/emailStudentLogin"/>
     </LinearLayout>
@@ -29,24 +33,31 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:text="password"/>
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:id="@+id/passwordStudentLogin"/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/loginStudentLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/loginStudentLogin"/>
+        android:text="Login" />
+
     <Button
+        android:id="@+id/registerStudentLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/registerStudentLogin"/>
+        android:text="Register" />
 
 </LinearLayout>

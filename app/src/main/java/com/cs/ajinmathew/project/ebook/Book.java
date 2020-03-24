@@ -1,12 +1,9 @@
 package com.cs.ajinmathew.project.ebook;
 
 public class Book {
-    public String code,title,description,author,publisher,type,prize;
+    public String code,title,description,author,publisher,type,prize,imagepath;
 
-    public Book() {
-    }
-
-    public Book(String code, String title, String description, String author, String publisher, String type, String prize) {
+    public Book(String code, String title, String description, String author, String publisher, String type, String prize, String imagepath) {
         this.code = code;
         this.title = title;
         this.description = description;
@@ -14,6 +11,10 @@ public class Book {
         this.publisher = publisher;
         this.type = type;
         this.prize = prize;
+        this.imagepath = imagepath;
+    }
+
+    public Book() {
     }
 
     public String getCode() {
@@ -70,5 +71,13 @@ public class Book {
 
     public void setPrize(String prize) {
         this.prize = prize;
+    }
+
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
     }
 }

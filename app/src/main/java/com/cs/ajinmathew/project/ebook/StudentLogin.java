@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,8 @@ DatabaseReference reference;
         btnLoginStudentLogin=(Button)findViewById( R.id.loginStudentLogin );
         edEmail=(EditText)findViewById( R.id.emailStudentLogin );
         edPass=(EditText)findViewById( R.id.passwordStudentLogin );
+
+
 
         btnRegStudentLogin=(Button)findViewById( R.id.registerStudentLogin );
         reference= FirebaseDatabase.getInstance().getReference().child( "Data" ).child( "Student" );
@@ -64,6 +67,16 @@ DatabaseReference reference;
                                 if(password.equals( Password )){
                                     Toast.makeText( getApplicationContext(),"Login Successful",Toast.LENGTH_LONG ).show();
                                     //startActivity( new Intent( getApplicationContext(),StudentHome.class ) );
+
+                                    SharedPreferences.Editor editor=getSharedPreferences( "LoginStudent",MODE_PRIVATE ).edit();
+                                    editor.putString( "UserName",student.name );
+                                    editor.putString( "UserPhone",student.mobile );
+                                    editor.putString( "UserEmail",student.email );
+                                    editor.putString( "UserPlace",student.place );
+                                    editor.putString( "UserParent",student.parent_name );
+                                    editor.putString( "UserDistrict",student.district );
+                                    editor.putString( "UserAdmission",student.admission_no );
+                                    editor.commit();
                                     startActivity( new Intent( getApplicationContext(),HomeStd.class ) );
                                 }else {
                                     Toast.makeText( getApplicationContext(),"Login Error ",Toast.LENGTH_LONG ).show();
